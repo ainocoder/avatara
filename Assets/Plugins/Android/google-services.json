@@ -1,0 +1,162 @@
+{
+  "project_info": {
+    "project_number": "923838647260",
+    "project_id": "real-estate-dashboard-u-m38ibp",
+    "storage_bucket": "real-estate-dashboard-u-m38ibp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923838647260:android:4d8e3d5eed54a1ca721d19",
+        "android_client_info": {
+          "package_name": "com.abk.avatarz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923838647260-fdkkh0m6rbfke84u1ma9hj5k9reon2f4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNxPxT6YJV9IMcurXvOo24dEXIUfs5WNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923838647260-fdkkh0m6rbfke84u1ma9hj5k9reon2f4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "923838647260-lghmccvf9hvdfr1srvrcmta89127adp9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.avatarz"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923838647260:android:aecee677a55505d2721d19",
+        "android_client_info": {
+          "package_name": "com.avatarz.mvp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923838647260-fdkkh0m6rbfke84u1ma9hj5k9reon2f4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNxPxT6YJV9IMcurXvOo24dEXIUfs5WNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923838647260-fdkkh0m6rbfke84u1ma9hj5k9reon2f4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "923838647260-lghmccvf9hvdfr1srvrcmta89127adp9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.avatarz"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923838647260:android:7cce364127a72701721d19",
+        "android_client_info": {
+          "package_name": "com.avataz.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923838647260-fdkkh0m6rbfke84u1ma9hj5k9reon2f4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNxPxT6YJV9IMcurXvOo24dEXIUfs5WNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923838647260-fdkkh0m6rbfke84u1ma9hj5k9reon2f4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "923838647260-lghmccvf9hvdfr1srvrcmta89127adp9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.avatarz"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923838647260:android:586e57a5357d5c86721d19",
+        "android_client_info": {
+          "package_name": "com.mycompany.avatarz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923838647260-rif2qb4b82925760mq6i13f3lf09i4pp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.avatarz",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "923838647260-fdkkh0m6rbfke84u1ma9hj5k9reon2f4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNxPxT6YJV9IMcurXvOo24dEXIUfs5WNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923838647260-fdkkh0m6rbfke84u1ma9hj5k9reon2f4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "923838647260-lghmccvf9hvdfr1srvrcmta89127adp9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.avatarz"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

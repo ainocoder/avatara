@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
+  <string name="gcm_defaultSenderId" translatable="false">923838647260</string>
+  <string name="google_storage_bucket" translatable="false">real-estate-dashboard-u-m38ibp.firebasestorage.app</string>
+  <string name="project_id" translatable="false">real-estate-dashboard-u-m38ibp</string>
+  <string name="google_api_key" translatable="false">AIzaSyBNxPxT6YJV9IMcurXvOo24dEXIUfs5WNs</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBNxPxT6YJV9IMcurXvOo24dEXIUfs5WNs</string>
+  <string name="google_app_id" translatable="false">1:923838647260:android:27a75609dff2e2d5721d19</string>
+  <string name="default_web_client_id" translatable="false">923838647260-fdkkh0m6rbfke84u1ma9hj5k9reon2f4.apps.googleusercontent.com</string>
+</resources>

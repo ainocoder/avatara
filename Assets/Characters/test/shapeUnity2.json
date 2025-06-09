@@ -1,0 +1,583 @@
+{
+    "shapeUnity2": {
+        "Version": "1.10.1822.1",
+        "Scene": {
+            "Name": true,
+            "SupportShaderSelect": true
+        },
+        "Export Directory": "C:/Users/pjh20/Documents/Reallusion/DataLink/CC4 - RootNode_8/imports/RootNode_1",
+        "Object": {
+            "shapeUnity2": {
+                "Generation": "AccuRig",
+                "Physics": {
+                    "Collision Shapes": {
+                        "RL_BoneRoot": {},
+                        "CC_Base_Hip": {},
+                        "CC_Base_Pelvis": {},
+                        "CC_Base_L_Thigh": {},
+                        "CC_Base_L_Calf": {},
+                        "CC_Base_L_Foot": {},
+                        "CC_Base_L_ToeBaseShareBone": {},
+                        "CC_Base_L_ToeBase": {},
+                        "CC_Base_L_PinkyToe1": {},
+                        "CC_Base_L_RingToe1": {},
+                        "CC_Base_L_MidToe1": {},
+                        "CC_Base_L_IndexToe1": {},
+                        "CC_Base_L_BigToe1": {},
+                        "CC_Base_L_CalfTwist01": {},
+                        "CC_Base_L_CalfTwist02": {},
+                        "CC_Base_L_KneeShareBone": {},
+                        "CC_Base_L_ThighTwist01": {},
+                        "CC_Base_L_ThighTwist02": {},
+                        "CC_Base_R_Thigh": {},
+                        "CC_Base_R_Calf": {},
+                        "CC_Base_R_KneeShareBone": {},
+                        "CC_Base_R_Foot": {},
+                        "CC_Base_R_ToeBase": {},
+                        "CC_Base_R_BigToe1": {},
+                        "CC_Base_R_PinkyToe1": {},
+                        "CC_Base_R_RingToe1": {},
+                        "CC_Base_R_IndexToe1": {},
+                        "CC_Base_R_MidToe1": {},
+                        "CC_Base_R_ToeBaseShareBone": {},
+                        "CC_Base_R_CalfTwist01": {},
+                        "CC_Base_R_CalfTwist02": {},
+                        "CC_Base_R_ThighTwist01": {},
+                        "CC_Base_R_ThighTwist02": {},
+                        "CC_Base_Waist": {},
+                        "CC_Base_Spine01": {},
+                        "CC_Base_Spine02": {},
+                        "CC_Base_NeckTwist01": {},
+                        "CC_Base_NeckTwist02": {},
+                        "CC_Base_Head": {},
+                        "CC_Base_FacialBone": {},
+                        "CC_Base_JawRoot": {},
+                        "CC_Base_Tongue01": {},
+                        "CC_Base_Tongue02": {},
+                        "CC_Base_Tongue03": {},
+                        "CC_Base_Teeth02": {},
+                        "CC_Base_R_Eye": {},
+                        "CC_Base_L_Eye": {},
+                        "CC_Base_UpperJaw": {},
+                        "CC_Base_Teeth01": {},
+                        "CC_Base_L_Clavicle": {},
+                        "CC_Base_L_Upperarm": {},
+                        "CC_Base_L_Forearm": {},
+                        "CC_Base_L_ForearmTwist01": {},
+                        "CC_Base_L_ForearmTwist02": {},
+                        "CC_Base_L_ElbowShareBone": {},
+                        "CC_Base_L_Hand": {},
+                        "CC_Base_L_UpperarmTwist01": {},
+                        "CC_Base_L_UpperarmTwist02": {},
+                        "CC_Base_L_RibsTwist": {},
+                        "CC_Base_L_Breast": {},
+                        "CC_Base_R_RibsTwist": {},
+                        "CC_Base_R_Breast": {},
+                        "CC_Base_R_Clavicle": {},
+                        "CC_Base_R_Upperarm": {},
+                        "CC_Base_R_Forearm": {},
+                        "CC_Base_R_ElbowShareBone": {},
+                        "CC_Base_R_ForearmTwist01": {},
+                        "CC_Base_R_ForearmTwist02": {},
+                        "CC_Base_R_Hand": {},
+                        "CC_Base_R_UpperarmTwist01": {},
+                        "CC_Base_R_UpperarmTwist02": {},
+                        "Body": {}
+                    },
+                    "Has BindPose Data": true,
+                    "Soft Physics": {
+                        "Meshes": {}
+                    }
+                },
+                "Meshes": {
+                    "Body": {
+                        "Materials": {
+                            "head_001": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    223.00001710653305,
+                                    1.0000000591389835
+                                ],
+                                "Ambient Color": [
+                                    12.973402976989746,
+                                    12.973402976989746,
+                                    12.973402976989746
+                                ],
+                                "Specular Color": [
+                                    255.0,
+                                    223.00001525878906,
+                                    1.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "textures\\shapeUnity2\\shapeUnity2\\Body\\head\\head_metallic.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "textures\\shapeUnity2\\shapeUnity2\\Body\\head\\head_roughness.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0,
+                                            0
+                                        ],
+                                        "Tiling": [
+                                            1,
+                                            1
+                                        ]
+                                    }
+                                },
+                                "Resource Textures": {}
+                            },
+                            "_4___Default_003_001": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    12.973402976989746,
+                                    12.973402976989746,
+                                    12.973402976989746
+                                ],
+                                "Specular Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "textures\\shapeUnity2\\shapeUnity2\\Body\\head\\head_metallic.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "textures\\shapeUnity2\\shapeUnity2\\Body\\head\\head_roughness.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0,
+                                            0
+                                        ],
+                                        "Tiling": [
+                                            1,
+                                            1
+                                        ]
+                                    }
+                                },
+                                "Resource Textures": {}
+                            },
+                            "face_001": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    12.973402976989746,
+                                    12.973402976989746,
+                                    12.973402976989746
+                                ],
+                                "Specular Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "textures\\shapeUnity2\\shapeUnity2\\Body\\head\\head_metallic.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "shapeUnity2.fbm\\face_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "textures\\shapeUnity2\\shapeUnity2\\Body\\head\\head_roughness.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                },
+                                "Resource Textures": {}
+                            },
+                            "black_Lips_001": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Ambient Color": [
+                                    12.973402976989746,
+                                    12.973402976989746,
+                                    12.973402976989746
+                                ],
+                                "Specular Color": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "textures\\shapeUnity2\\shapeUnity2\\Body\\head\\head_metallic.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "textures\\shapeUnity2\\shapeUnity2\\Body\\head\\head_roughness.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0,
+                                            0
+                                        ],
+                                        "Tiling": [
+                                            1,
+                                            1
+                                        ]
+                                    }
+                                },
+                                "Resource Textures": {}
+                            },
+                            "White_Lips_001": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    204.00000303983688,
+                                    204.00000303983688,
+                                    204.00000303983688
+                                ],
+                                "Ambient Color": [
+                                    12.973402976989746,
+                                    12.973402976989746,
+                                    12.973402976989746
+                                ],
+                                "Specular Color": [
+                                    204.0,
+                                    204.0,
+                                    204.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "textures\\shapeUnity2\\shapeUnity2\\Body\\head\\head_metallic.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "textures\\shapeUnity2\\shapeUnity2\\Body\\head\\head_roughness.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0,
+                                            0
+                                        ],
+                                        "Tiling": [
+                                            1,
+                                            1
+                                        ]
+                                    }
+                                },
+                                "Resource Textures": {}
+                            },
+                            "Material__63_003_001": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    237.00001627206802,
+                                    51.000004559755325,
+                                    35.00000171363354
+                                ],
+                                "Ambient Color": [
+                                    12.973402976989746,
+                                    12.973402976989746,
+                                    12.973402976989746
+                                ],
+                                "Specular Color": [
+                                    237.00001525878906,
+                                    51.000003814697266,
+                                    35.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "textures\\shapeUnity2\\shapeUnity2\\Body\\head\\head_metallic.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "textures\\shapeUnity2\\shapeUnity2\\Body\\head\\head_roughness.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0,
+                                            0
+                                        ],
+                                        "Tiling": [
+                                            1,
+                                            1
+                                        ]
+                                    }
+                                },
+                                "Resource Textures": {}
+                            }
+                        }
+                    }
+                },
+                "Bind_Pose": "TPose"
+            }
+        },
+        "Avatar_Type": "NonStandard",
+        "Link_ID": "4630071139072",
+        "HIK": {
+            "Profile_Path": "RootNode.3dxProfile"
+        },
+        "Facial_Profile": {
+            "Profile_Path": "RootNode.ccFacialProfile",
+            "Type": "CC4Standard",
+            "Categories": {
+                "Brow": [],
+                "EyeBlink": [],
+                "EyeLid": [],
+                "EyeLook": [],
+                "Nose": [],
+                "Cheek": [],
+                "MouthBase": [],
+                "MouthBlend": [],
+                "MouthMove": [],
+                "Tongue": [],
+                "Jaw": [],
+                "Head": []
+            }
+        },
+        "Root Bones": [
+            {
+                "Name": "RL_BoneRoot",
+                "Original Name": "RL_BoneRoot",
+                "Object": "RootNode",
+                "Type": "AVATAR",
+                "Link_ID": "4630071139072"
+            }
+        ],
+        "Object_Info": [
+            {
+                "Link_ID": "4630071139072",
+                "Name": "RootNode",
+                "Type": "AVATAR",
+                "Root": "RL_BoneRoot",
+                "Bones": [
+                    "RL_BoneRoot",
+                    "CC_Base_R_ThighTwist01",
+                    "CC_Base_L_RingToe1",
+                    "CC_Base_L_MidToe1",
+                    "CC_Base_L_ToeBaseShareBone",
+                    "CC_Base_L_PinkyToe1",
+                    "CC_Base_L_Foot",
+                    "CC_Base_L_ToeBase",
+                    "CC_Base_Hip",
+                    "CC_Base_L_Calf",
+                    "CC_Base_Pelvis",
+                    "CC_Base_L_Thigh",
+                    "RL_BoneRoot",
+                    "CC_Base_L_IndexToe1",
+                    "CC_Base_L_BigToe1",
+                    "CC_Base_L_CalfTwist01",
+                    "CC_Base_L_CalfTwist02",
+                    "CC_Base_L_KneeShareBone",
+                    "CC_Base_L_ThighTwist01",
+                    "CC_Base_L_ThighTwist02",
+                    "CC_Base_R_Thigh",
+                    "CC_Base_R_Calf",
+                    "CC_Base_R_KneeShareBone",
+                    "CC_Base_R_Foot",
+                    "CC_Base_R_ToeBase",
+                    "CC_Base_R_BigToe1",
+                    "CC_Base_R_PinkyToe1",
+                    "CC_Base_R_RingToe1",
+                    "CC_Base_R_IndexToe1",
+                    "CC_Base_R_MidToe1",
+                    "CC_Base_R_ToeBaseShareBone",
+                    "CC_Base_R_CalfTwist01",
+                    "CC_Base_R_CalfTwist02",
+                    "CC_Base_R_ThighTwist02",
+                    "CC_Base_Waist",
+                    "CC_Base_Spine01",
+                    "CC_Base_Spine02",
+                    "CC_Base_NeckTwist01",
+                    "CC_Base_NeckTwist02",
+                    "CC_Base_Head",
+                    "CC_Base_FacialBone",
+                    "CC_Base_JawRoot",
+                    "CC_Base_Tongue01",
+                    "CC_Base_Tongue02",
+                    "CC_Base_Tongue03",
+                    "CC_Base_Teeth02",
+                    "CC_Base_R_Eye",
+                    "CC_Base_L_Eye",
+                    "CC_Base_UpperJaw",
+                    "CC_Base_Teeth01",
+                    "CC_Base_L_Clavicle",
+                    "CC_Base_L_Upperarm",
+                    "CC_Base_L_Forearm",
+                    "CC_Base_L_ForearmTwist01",
+                    "CC_Base_L_ForearmTwist02",
+                    "CC_Base_L_ElbowShareBone",
+                    "CC_Base_L_Hand",
+                    "CC_Base_L_UpperarmTwist01",
+                    "CC_Base_L_UpperarmTwist02",
+                    "CC_Base_L_RibsTwist",
+                    "CC_Base_L_Breast",
+                    "CC_Base_R_RibsTwist",
+                    "CC_Base_R_Breast",
+                    "CC_Base_R_Clavicle",
+                    "CC_Base_R_Upperarm",
+                    "CC_Base_R_Forearm",
+                    "CC_Base_R_ElbowShareBone",
+                    "CC_Base_R_ForearmTwist01",
+                    "CC_Base_R_ForearmTwist02",
+                    "CC_Base_R_Hand",
+                    "CC_Base_R_UpperarmTwist01",
+                    "CC_Base_R_UpperarmTwist02"
+                ]
+            }
+        ],
+        "Blender_Project": true
+    }
+}

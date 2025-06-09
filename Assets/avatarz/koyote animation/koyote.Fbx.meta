@@ -1,0 +1,715 @@
+fileFormatVersion: 2
+guid: b54778a4a3656c64bbfd5aec650b1024
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Coyote
+    second: {fileID: 2100000, guid: 67b57f1261c33c04fa9db01963d6b391, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: 0_T-Pose
+      takeName: 0_T-Pose
+      internalID: -7881739814215078984
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 0
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Coyote_Pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_L_Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_R_Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_L_Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_R_Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_L_Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_R_Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_L_Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_R_Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_L_UpperArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_R_UpperArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_L_Forearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_R_Forearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_L_Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_R_Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_L_Toe0
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_R_Toe0
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_L_Eye
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_R_Eye
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_Jaw
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_L_Finger0
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_L_Finger1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_L_Finger2
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_L_Finger3
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_R_Finger0
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_R_Finger1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_R_Finger2
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_R_Finger3
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote_Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: koyote(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RL_BoneRoot
+      parentName: koyote(Clone)
+      position: {x: -0.0000014034014, y: 0, z: -0.018861912}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Coyote
+      parentName: RL_BoneRoot
+      position: {x: 1.4551916e-13, y: -0.000000001192093, z: 0.5236262}
+      rotation: {x: 0.00000062798597, y: 0.0000009630556, z: 0.70710605, w: 0.70710754}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.99999994}
+    - name: Coyote_Pelvis
+      parentName: Coyote
+      position: {x: -0.0000000023841855, y: -1.4551914e-13, z: 0.006061982}
+      rotation: {x: -0.5000005, y: 0.50000066, z: 0.49999917, w: 0.4999997}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000005}
+    - name: Coyote_Spine
+      parentName: Coyote_Pelvis
+      position: {x: -0.056130297, y: -0.00007114529, z: 0.00000007459078}
+      rotation: {x: 0.0000020116568, y: -0.0000007599592, z: 0.027626917, w: -0.99961835}
+      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000005}
+    - name: Coyote_Spine1
+      parentName: Coyote_Spine
+      position: {x: -0.08950092, y: -0.00007104398, z: -0.000000009252108}
+      rotation: {x: -0, y: -0.0000001937151, z: 0.038501948, w: 0.9992586}
+      scale: {x: 1.0000006, y: 1.0000008, z: 1.0000007}
+    - name: Coyote_Spine2
+      parentName: Coyote_Spine1
+      position: {x: -0.08949501, y: -0.00007009268, z: -0.000000007831696}
+      rotation: {x: -0, y: -0.0000004172325, z: 0.08939889, w: 0.99599594}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Coyote_Neck
+      parentName: Coyote_Spine2
+      position: {x: -0.08950787, y: -0.00010840655, z: -0.000000017477435}
+      rotation: {x: 0.000000029802322, y: -0.000000029802322, z: -0.00000008940697, w: 1}
+      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000005}
+    - name: Coyote_Head
+      parentName: Coyote_Neck
+      position: {x: -0.136119, y: 0.000000009536744, z: -0.000000023656323}
+      rotation: {x: -0.000000029802322, y: -0.0000002682209, z: -0.10023075, w: 0.99496424}
+      scale: {x: 1.0000002, y: 1.000001, z: 1.0000006}
+    - name: Coyote_L_Lower_Eyelid
+      parentName: Coyote_Head
+      position: {x: -0.2304999, y: 0.118853614, z: 0.08046924}
+      rotation: {x: 0.1747802, y: 0.33597878, z: -0.82989824, w: 0.40968174}
+      scale: {x: 1.0000004, y: 0.9999997, z: 1.0000005}
+    - name: Coyote_L_Upper_Eyelid
+      parentName: Coyote_Head
+      position: {x: -0.23050004, y: 0.11880776, z: 0.08042419}
+      rotation: {x: 0.3418101, y: 0.16307777, z: -0.41674805, w: 0.82637316}
+      scale: {x: 1, y: 1.000001, z: 1.0000007}
+    - name: Coyote_L_Eyebrow
+      parentName: Coyote_Head
+      position: {x: -0.26574364, y: 0.122267574, z: 0.061837528}
+      rotation: {x: 0.39788178, y: 0.21196675, z: -0.37660575, w: 0.80927634}
+      scale: {x: 1, y: 1.000001, z: 1.0000006}
+    - name: Coyote_L_Cheek
+      parentName: Coyote_Head
+      position: {x: -0.13953911, y: -0.0001326132, z: 0.16246353}
+      rotation: {x: 0.10096964, y: 0.7477492, z: 0.09034537, w: 0.6500109}
+      scale: {x: 1.0000004, y: 1.0000007, z: 1.0000001}
+    - name: Coyote_Nose
+      parentName: Coyote_Head
+      position: {x: -0.14567232, y: 0.4387045, z: 0.00000057514313}
+      rotation: {x: -0.0000005427494, y: 0.0000023412035, z: -0.6594737, w: 0.7517277}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000005}
+    - name: Coyote_L_Upper_Mouth
+      parentName: Coyote_Head
+      position: {x: -0.12075142, y: 0.33798698, z: 0.106002465}
+      rotation: {x: 0.5986111, y: 0.09501636, z: -0.016908547, w: 0.7952049}
+      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000002}
+    - name: Coyote_Jaw
+      parentName: Coyote_Head
+      position: {x: -0.16388279, y: 0.014087206, z: -0.000000007366035}
+      rotation: {x: -0.0000004491574, y: 0.000002728501, z: -0.8098261, w: 0.5866701}
+      scale: {x: 1.0000007, y: 0.9999997, z: 1.0000006}
+    - name: Coyote_L_Mouth
+      parentName: Coyote_Jaw
+      position: {x: -0.1366194, y: -0.023706883, z: 0.103287034}
+      rotation: {x: -0.6228456, y: 0.47610372, z: 0.50041616, w: 0.3673859}
+      scale: {x: 1.0000005, y: 1.0000005, z: 0.9999997}
+    - name: Coyote_L_Lower_Mouth
+      parentName: Coyote_Jaw
+      position: {x: -0.25502357, y: -0.0008237696, z: 0.07178691}
+      rotation: {x: -0.60334915, y: 0.5398348, z: 0.3655855, w: -0.4592336}
+      scale: {x: 1.0000002, y: 1.0000002, z: 0.9999997}
+    - name: Coyote_R_Lower_Mouth
+      parentName: Coyote_Jaw
+      position: {x: -0.2550231, y: -0.0008236027, z: -0.071789004}
+      rotation: {x: -0.6970763, y: 0.41174895, z: -0.26896143, w: 0.5217347}
+      scale: {x: 1.0000006, y: 1.0000005, z: 0.9999997}
+    - name: Coyote_R_Mouth
+      parentName: Coyote_Jaw
+      position: {x: -0.13661918, y: -0.023705611, z: -0.103289306}
+      rotation: {x: -0.6228457, y: 0.47610596, z: -0.5004137, w: -0.36738592}
+      scale: {x: 1.0000001, y: 0.9999998, z: 1.0000004}
+    - name: Coyote_Tongue
+      parentName: Coyote_Jaw
+      position: {x: -0.13350447, y: 0.003452375, z: -0.00000012118925}
+      rotation: {x: -0.000000019406649, y: -0.00000039839753, z: 0.11355706, w: 0.99353147}
+      scale: {x: 0.99999994, y: 1.0000004, z: 1.0000002}
+    - name: Coyote_Tongue02
+      parentName: Coyote_Tongue
+      position: {x: -0.082068995, y: -0.00006517648, z: -0.0000000020346487}
+      rotation: {x: -3.5527124e-15, y: -0, z: -7.731561e-15, w: 1}
+      scale: {x: 1.0000005, y: 1, z: 1.0000002}
+    - name: Coyote_L_Eye
+      parentName: Coyote_Head
+      position: {x: -0.23051073, y: 0.118829295, z: 0.080447055}
+      rotation: {x: 0.06408913, y: 0.06375476, z: -0.6984709, w: 0.7099059}
+      scale: {x: 1.0000002, y: 1, z: 1.0000006}
+    - name: Coyote_L_Ear
+      parentName: Coyote_Head
+      position: {x: -0.30332154, y: -0.062105164, z: 0.13712052}
+      rotation: {x: 0.004849434, y: 0.090873666, z: 0.053068988, w: 0.9944356}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000007}
+    - name: Coyote_L_Ear02
+      parentName: Coyote_L_Ear
+      position: {x: -0.16064462, y: -0.00012707713, z: -0.0000025177008}
+      rotation: {x: 0.0048133205, y: 0.090874575, z: 0.053464867, w: 0.99441445}
+      scale: {x: 1, y: 1.0000008, z: 1.0000005}
+    - name: Coyote_R_Lower_Eyelid
+      parentName: Coyote_Head
+      position: {x: -0.2304986, y: 0.11885383, z: -0.080470674}
+      rotation: {x: 0.17478174, y: 0.33597386, z: 0.82989955, w: -0.40968236}
+      scale: {x: 1.0000005, y: 1.0000001, z: 1.0000004}
+    - name: Coyote_R_Upper_Eyelid
+      parentName: Coyote_Head
+      position: {x: -0.23049875, y: 0.11880798, z: -0.08042562}
+      rotation: {x: 0.34181103, y: 0.16307396, z: 0.41674843, w: -0.82637334}
+      scale: {x: 1, y: 1.0000004, z: 1.0000005}
+    - name: Coyote_R_Eyebrow
+      parentName: Coyote_Head
+      position: {x: -0.26574308, y: 0.12226776, z: -0.061839074}
+      rotation: {x: 0.39788276, y: 0.21196374, z: 0.3766064, w: -0.80927646}
+      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000002}
+    - name: Coyote_R_Cheek
+      parentName: Coyote_Head
+      position: {x: -0.13953856, y: -0.00013217928, z: -0.16246495}
+      rotation: {x: 0.10096938, y: 0.7477484, z: -0.090341136, w: -0.65001225}
+      scale: {x: 1.0000006, y: 1.0000004, z: 1.0000004}
+    - name: Coyote_R_Upper_Mouth
+      parentName: Coyote_Head
+      position: {x: -0.12075095, y: 0.33798733, z: -0.10600303}
+      rotation: {x: -0.59861124, y: -0.095014885, z: -0.016908137, w: 0.795205}
+      scale: {x: 1.0000004, y: 1.0000008, z: 1.0000001}
+    - name: Coyote_R_Eye
+      parentName: Coyote_Head
+      position: {x: -0.23050943, y: 0.11882951, z: -0.080448486}
+      rotation: {x: 0.06409026, y: 0.063749805, z: 0.6984706, w: -0.7099065}
+      scale: {x: 1.0000001, y: 0.9999998, z: 1.0000002}
+    - name: Coyote_R_Ear
+      parentName: Coyote_Head
+      position: {x: -0.30331963, y: -0.062104687, z: -0.13712282}
+      rotation: {x: 0.004849611, y: 0.09087232, z: -0.05306851, w: -0.9944358}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000007}
+    - name: Coyote_R_Ear02
+      parentName: Coyote_R_Ear
+      position: {x: -0.16064493, y: -0.00012732504, z: 0.0000024795527}
+      rotation: {x: -0.004813283, y: -0.09087509, z: 0.053464204, w: 0.9944145}
+      scale: {x: 1.0000004, y: 1.0000008, z: 1.000001}
+    - name: Coyote_L_Clavicle
+      parentName: Coyote_Spine2
+      position: {x: -0.07347353, y: -0.00326376, z: 0.018073527}
+      rotation: {x: -0.64674395, y: -0.02938186, z: 0.76174957, w: 0.024424803}
+      scale: {x: 1.0000006, y: 1.0000014, z: 1.0000007}
+    - name: Coyote_L_UpperArm
+      parentName: Coyote_L_Clavicle
+      position: {x: -0.11010041, y: 0.000000033378605, z: -0.0000009250642}
+      rotation: {x: 0.10449172, y: 0.05953025, z: -0.0026724848, w: 0.9927389}
+      scale: {x: 1.0000006, y: 1.0000001, z: 1.0000002}
+    - name: Coyote_L_Forearm
+      parentName: Coyote_L_UpperArm
+      position: {x: -0.22007897, y: 0.000000019073484, z: 0.0000002455711}
+      rotation: {x: -0.000000022351736, y: 0.00000010058282, z: 0.042557117, w: 0.999094}
+      scale: {x: 1.0000006, y: 1.000001, z: 1.0000004}
+    - name: Coyote_L_Hand
+      parentName: Coyote_L_Forearm
+      position: {x: -0.15603773, y: -0.000000038146975, z: -0.00000112772}
+      rotation: {x: 0.70526797, y: 0.046927493, z: 0.04689009, w: -0.7058303}
+      scale: {x: 1.0000007, y: 1.0000007, z: 1.0000011}
+    - name: Coyote_L_Finger3
+      parentName: Coyote_L_Hand
+      position: {x: -0.113349065, y: 0.007958869, z: 0.039536312}
+      rotation: {x: 0.04255827, y: 0.1225047, z: -0.08863534, w: 0.98758554}
+      scale: {x: 1.0000006, y: 1.0000006, z: 1.0000011}
+    - name: Coyote_L_Finger0
+      parentName: Coyote_L_Hand
+      position: {x: -0.07000869, y: 0.018625163, z: -0.06298142}
+      rotation: {x: 0.42000195, y: -0.27780798, z: 0.0019244545, w: 0.8639546}
+      scale: {x: 1.0000006, y: 1.0000005, z: 1.0000007}
+    - name: Coyote_L_Finger1
+      parentName: Coyote_L_Hand
+      position: {x: -0.119077325, y: -0.00018757817, z: -0.031147344}
+      rotation: {x: 0.00208792, y: -0.041936584, z: -0.120098375, w: 0.9918737}
+      scale: {x: 1.0000007, y: 1.0000005, z: 1.0000007}
+    - name: Coyote_L_Finger2
+      parentName: Coyote_L_Hand
+      position: {x: -0.1228205, y: 0.00021930692, z: 0.005462212}
+      rotation: {x: 0.011352328, y: 0.02350681, z: -0.09621521, w: 0.99501824}
+      scale: {x: 1.0000007, y: 1.0000008, z: 1.0000012}
+    - name: Coyote_R_Clavicle
+      parentName: Coyote_Spine2
+      position: {x: -0.07347327, y: -0.0032637122, z: -0.0180736}
+      rotation: {x: 0.646744, y: 0.029379588, z: 0.7617497, w: 0.024423057}
+      scale: {x: 1.0000006, y: 1.0000005, z: 1.0000004}
+    - name: Coyote_R_UpperArm
+      parentName: Coyote_R_Clavicle
+      position: {x: -0.11010045, y: 0.000000009536742, z: 0.0000020074842}
+      rotation: {x: 0.10449182, y: 0.059529357, z: 0.0026732597, w: -0.99273896}
+      scale: {x: 1.0000014, y: 1.000001, z: 1.0000007}
+    - name: Coyote_R_Forearm
+      parentName: Coyote_R_UpperArm
+      position: {x: -0.22007923, y: 0.00000020265577, z: -0.0000007009505}
+      rotation: {x: -0.000000022351735, y: 0.00000007078049, z: 0.04255722, w: 0.99909407}
+      scale: {x: 1.0000008, y: 1.0000008, z: 1.0000007}
+    - name: Coyote_R_Hand
+      parentName: Coyote_R_Forearm
+      position: {x: -0.15603769, y: -0.000000009536744, z: 0.0000015425683}
+      rotation: {x: -0.70526785, y: -0.046933923, z: 0.04689655, w: -0.70582944}
+      scale: {x: 1.0000006, y: 1.0000005, z: 1.0000007}
+    - name: Coyote_R_Finger3
+      parentName: Coyote_R_Hand
+      position: {x: -0.11334948, y: 0.007958202, z: -0.039536316}
+      rotation: {x: -0.042558536, y: -0.122504875, z: -0.08863535, w: 0.9875855}
+      scale: {x: 1.0000008, y: 1.0000007, z: 1.0000012}
+    - name: Coyote_R_Finger0
+      parentName: Coyote_R_Hand
+      position: {x: -0.07000892, y: 0.018624496, z: 0.062981516}
+      rotation: {x: -0.42000207, y: 0.27780765, z: 0.0019243206, w: 0.86395454}
+      scale: {x: 1.0000012, y: 1.0000008, z: 1.0000004}
+    - name: Coyote_R_Finger1
+      parentName: Coyote_R_Hand
+      position: {x: -0.119077824, y: -0.0001882076, z: 0.0311474}
+      rotation: {x: -0.0020883677, y: 0.041936576, z: -0.12009849, w: 0.9918737}
+      scale: {x: 1.000001, y: 1.0000006, z: 1.000001}
+    - name: Coyote_R_Finger2
+      parentName: Coyote_R_Hand
+      position: {x: -0.12282088, y: 0.00021842, z: -0.0054621785}
+      rotation: {x: -0.0113526555, y: -0.023506945, z: -0.096215606, w: 0.9950182}
+      scale: {x: 1.0000008, y: 1.0000005, z: 1.000001}
+    - name: Coyote_L_Thigh
+      parentName: Coyote_Pelvis
+      position: {x: 0.00000031649967, y: 0.00000011444091, z: 0.07532249}
+      rotation: {x: -0.08772715, y: -0.9961446, z: 0.00000074505795, w: 0.00000056624407}
+      scale: {x: 1, y: 1.0000005, z: 1.0000001}
+    - name: Coyote_L_Calf
+      parentName: Coyote_L_Thigh
+      position: {x: -0.26291615, y: 0.00000011324882, z: -0.00000010490416}
+      rotation: {x: -0.00000007118852, y: -0.0000000095434975, z: 0.018724931, w: 0.9998247}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000007}
+    - name: Coyote_L_Foot
+      parentName: Coyote_L_Calf
+      position: {x: -0.19056125, y: 0.00000002622604, z: -0.00000007152557}
+      rotation: {x: -0.033115346, y: 0.003541783, z: -0.106305555, w: 0.9937756}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000007}
+    - name: Coyote_L_Toe0
+      parentName: Coyote_L_Foot
+      position: {x: -0.05612673, y: 0.16456246, z: 0.00000004291535}
+      rotation: {x: -0.00000035017726, y: 0.00000048405485, z: -0.70710665, w: 0.70710707}
+      scale: {x: 1, y: 1, z: 1.0000008}
+    - name: Coyote_R_Thigh
+      parentName: Coyote_Pelvis
+      position: {x: 0.000000044852218, y: -0.00000007152557, z: -0.075322494}
+      rotation: {x: -0.08772709, y: -0.99614453, z: 0.0000007748602, w: 0.00000068545324}
+      scale: {x: 1.0000006, y: 1.0000005, z: 1.0000005}
+    - name: Coyote_R_Calf
+      parentName: Coyote_R_Thigh
+      position: {x: -0.26291642, y: -0.000000016689297, z: 0.000000014305112}
+      rotation: {x: -0.0000000061378875, y: 0.00000007506207, z: 0.018724984, w: 0.99982464}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1.000001}
+    - name: Coyote_R_Foot
+      parentName: Coyote_R_Calf
+      position: {x: -0.1905613, y: 0.00000007629395, z: 0.000000028610234}
+      rotation: {x: 0.033115078, y: -0.0035431318, z: -0.106305435, w: 0.99377567}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000007}
+    - name: Coyote_R_Toe0
+      parentName: Coyote_R_Foot
+      position: {x: -0.056126207, y: 0.16456285, z: -0.00000005245208}
+      rotation: {x: -0.00000030547378, y: 0.00000038277352, z: -0.70710665, w: 0.70710695}
+      scale: {x: 1.0000005, y: 1.0000002, z: 1.0000006}
+    - name: Coyote_Tail
+      parentName: Coyote_Pelvis
+      position: {x: 0.00026484265, y: -0.07469591, z: 0.00000011942319}
+      rotation: {x: 0.0000015095883, y: -0.00000056389933, z: -0.7071068, w: -0.7071068}
+      scale: {x: 1.0000006, y: 1.0000001, z: 1.0000007}
+    - name: Coyote_Tail02
+      parentName: Coyote_Tail
+      position: {x: -0.33238718, y: -0.00022425779, z: 0.000000019444558}
+      rotation: {x: -0.0000001543509, y: -0.0000008102463, z: 0.056672864, w: 0.9983929}
+      scale: {x: 1.0000013, y: 1.0000008, z: 1.0000006}
+    - name: Coyote_Tail03
+      parentName: Coyote_Tail02
+      position: {x: -0.28310984, y: -0.00022532465, z: 0.000000032445826}
+      rotation: {x: 1.4210851e-14, y: -0, z: -1.2506223e-13, w: 1}
+      scale: {x: 1.000001, y: 1.0000004, z: 1.0000005}
+    - name: Coyote_Tail04
+      parentName: Coyote_Tail03
+      position: {x: -0.28319043, y: -0.00013056757, z: 0.000000032715764}
+      rotation: {x: 0.0000001842006, y: 0.0000005703136, z: -0.27320442, w: 0.961956}
+      scale: {x: 1.0000011, y: 1.0000006, z: 1.0000007}
+    - name: Coyote_Mesh
+      parentName: koyote(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

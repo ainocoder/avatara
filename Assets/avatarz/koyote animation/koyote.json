@@ -1,0 +1,165 @@
+{
+    "koyote": {
+        "Version": "1.10.1822.1",
+        "Scene": {
+            "Name": true,
+            "SupportShaderSelect": true
+        },
+        "Export Directory": "C:/Users/pjh20/OneDrive/바탕 화면/avatarz/koyote animation",
+        "Object": {
+            "koyote": {
+                "Generation": "",
+                "Physics": {
+                    "Collision Shapes": {
+                        "RL_BoneRoot": {},
+                        "Coyote": {},
+                        "Coyote_Pelvis": {},
+                        "Coyote_Spine": {},
+                        "Coyote_Spine1": {},
+                        "Coyote_Spine2": {},
+                        "Coyote_Neck": {},
+                        "Coyote_Head": {},
+                        "Coyote_L_Cheek": {},
+                        "Coyote_R_Cheek": {},
+                        "Coyote_Nose": {},
+                        "Coyote_Jaw": {},
+                        "Coyote_Tongue": {},
+                        "Coyote_Tongue02": {},
+                        "Coyote_R_Lower_Mouth": {},
+                        "Coyote_L_Lower_Mouth": {},
+                        "Coyote_R_Mouth": {},
+                        "Coyote_L_Mouth": {},
+                        "Coyote_L_Ear": {},
+                        "Coyote_L_Ear02": {},
+                        "Coyote_R_Ear": {},
+                        "Coyote_R_Ear02": {},
+                        "Coyote_L_Eyebrow": {},
+                        "Coyote_R_Eyebrow": {},
+                        "Coyote_L_Eye": {},
+                        "Coyote_R_Eye": {},
+                        "Coyote_L_Upper_Eyelid": {},
+                        "Coyote_R_Upper_Eyelid": {},
+                        "Coyote_L_Lower_Eyelid": {},
+                        "Coyote_R_Lower_Eyelid": {},
+                        "Coyote_L_Upper_Mouth": {},
+                        "Coyote_R_Upper_Mouth": {},
+                        "Coyote_L_Clavicle": {},
+                        "Coyote_L_UpperArm": {},
+                        "Coyote_L_Forearm": {},
+                        "Coyote_L_Hand": {},
+                        "Coyote_L_Finger0": {},
+                        "Coyote_L_Finger1": {},
+                        "Coyote_L_Finger2": {},
+                        "Coyote_L_Finger3": {},
+                        "Coyote_R_Clavicle": {},
+                        "Coyote_R_UpperArm": {},
+                        "Coyote_R_Forearm": {},
+                        "Coyote_R_Hand": {},
+                        "Coyote_R_Finger0": {},
+                        "Coyote_R_Finger1": {},
+                        "Coyote_R_Finger2": {},
+                        "Coyote_R_Finger3": {},
+                        "Coyote_Tail": {},
+                        "Coyote_Tail02": {},
+                        "Coyote_Tail03": {},
+                        "Coyote_Tail04": {},
+                        "Coyote_L_Thigh": {},
+                        "Coyote_L_Calf": {},
+                        "Coyote_L_Foot": {},
+                        "Coyote_L_Toe0": {},
+                        "Coyote_R_Thigh": {},
+                        "Coyote_R_Calf": {},
+                        "Coyote_R_Foot": {},
+                        "Coyote_R_Toe0": {},
+                        "Coyote_Mesh": {}
+                    }
+                },
+                "Meshes": {
+                    "Coyote_Mesh": {
+                        "Materials": {
+                            "Coyote": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    150.0,
+                                    150.0,
+                                    150.0
+                                ],
+                                "Ambient Color": [
+                                    150.0,
+                                    150.0,
+                                    150.0
+                                ],
+                                "Specular Color": [
+                                    229.5,
+                                    229.5,
+                                    229.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./koyote.fbm/Coyote_Diffuse.tif",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./koyote.fbm/Coyote_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/koyote/koyote/Coyote_Mesh/Coyote/Coyote_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/koyote/koyote/Coyote_Mesh/Coyote/Coyote_MetallicAlpha.png"
+                                    }
+                                },
+                                "Resource Textures": {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
