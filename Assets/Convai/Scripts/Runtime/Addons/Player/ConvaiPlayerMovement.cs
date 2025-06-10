@@ -35,6 +35,13 @@ namespace Convai.Scripts.Runtime.Addons
         [SerializeField] [Tooltip("Limit of upwards and downwards look angles.")] [Range(1, 90)]
         private float lookXLimit = 45.0f;
 
+        [Header("Movement Lock Settings (Admin Only)")]
+        [SerializeField] [Tooltip("관리자 전용: 카메라 이동을 고정합니다. 체험자는 이동할 수 없게 됩니다.")]
+        private bool lockMovement = false;
+
+        [SerializeField] [Tooltip("관리자 전용: 카메라 회전(둘러보기)은 허용하되 위치 이동만 제한합니다.")]
+        private bool allowLookAround = true;
+
         private CharacterController _characterController;
         private Vector3 _moveDirection = Vector3.zero;
         private float _rotationX;
@@ -75,7 +82,8 @@ namespace Convai.Scripts.Runtime.Addons
         {
             Vector3 horizontalMovement = Vector3.zero;
 
-            if (!EventSystem.current.IsPointerOverGameObject() && !UIUtilities.IsAnyInputFieldFocused())
+            // 관리자가 이동을 고정했는지 확인
+            if (!lockMovement && !EventSystem.current.IsPointerOverGameObject() && !UIUtilities.IsAnyInputFieldFocused())
             {
                 Vector3 forward = transform.TransformDirection(Vector3.forward);
                 Vector3 right = transform.TransformDirection(Vector3.right);
@@ -93,18 +101,26 @@ namespace Convai.Scripts.Runtime.Addons
                 // Apply gravity only when canMove is true
                 _moveDirection.y -= gravity * Time.deltaTime;
 
-            // Move the character
-            _characterController.Move((_moveDirection + horizontalMovement) * Time.deltaTime);
+            // Move the character only if movement is not locked
+            if (!lockMovement)
+            {
+                _characterController.Move((_moveDirection + horizontalMovement) * Time.deltaTime);
+            }
         }
 
         private void Jump()
         {
-            if (_characterController.isGrounded && !UIUtilities.IsAnyInputFieldFocused()) _moveDirection.y = jumpSpeed;
+            // 이동이 고정되어 있으면 점프도 비활성화
+            if (!lockMovement && _characterController.isGrounded && !UIUtilities.IsAnyInputFieldFocused()) 
+                _moveDirection.y = jumpSpeed;
         }
 
         private void RotatePlayerAndCamera()
         {
             if (Cursor.lockState != CursorLockMode.Locked) return;
+
+            // 이동이 고정되어 있고 둘러보기도 허용하지 않는 경우 회전 비활성화
+            if (lockMovement && !allowLookAround) return;
 
             // Vertical rotation
             _rotationX -= ConvaiInputManager.Instance.lookVector.y * lookSpeedMultiplier;
@@ -114,6 +130,52 @@ namespace Convai.Scripts.Runtime.Addons
             // Horizontal rotation
             float rotationY = ConvaiInputManager.Instance.lookVector.x * lookSpeedMultiplier;
             transform.rotation *= Quaternion.Euler(0, rotationY, 0);
+        }
+
+        /// <summary>
+        /// 관리자용: 카메라 이동 고정 상태를 설정합니다.
+        /// </summary>
+        /// <param name="locked">고정 여부</param>
+        public void SetMovementLock(bool locked)
+        {
+            lockMovement = locked;
+            Debug.Log($"[ConvaiPlayerMovement] 이동 고정 상태: {(locked ? "활성화" : "비활성화")}");
+        }
+
+        /// <summary>
+        /// 관리자용: 둘러보기 허용 여부를 설정합니다.
+        /// </summary>
+        /// <param name="allow">허용 여부</param>
+        public void SetLookAroundAllowed(bool allow)
+        {
+            allowLookAround = allow;
+            Debug.Log($"[ConvaiPlayerMovement] 둘러보기: {(allow ? "허용" : "제한")}");
+        }
+
+        /// <summary>
+        /// 관리자용: 현재 이동 고정 상태를 반환합니다.
+        /// </summary>
+        /// <returns>고정 여부</returns>
+        public bool IsMovementLocked()
+        {
+            return lockMovement;
+        }
+
+        /// <summary>
+        /// 관리자용: 현재 둘러보기 허용 상태를 반환합니다.
+        /// </summary>
+        /// <returns>허용 여부</returns>
+        public bool IsLookAroundAllowed()
+        {
+            return allowLookAround;
+        }
+
+        /// <summary>
+        /// 관리자용: 이동 고정 상태를 토글합니다.
+        /// </summary>
+        public void ToggleMovementLock()
+        {
+            SetMovementLock(!lockMovement);
         }
     }
 }
