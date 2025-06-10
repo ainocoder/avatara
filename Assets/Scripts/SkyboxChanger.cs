@@ -2,6 +2,25 @@ using UnityEngine;
 
 public class SkyboxChanger : MonoBehaviour
 {
+    public Material[] skyboxes; // 스카이박스 메테리얼 배열
+    private int currentIndex = 0; // 현재 스카이박스 인덱스
+
+    void Start()
+    {
+        // 처음 시작 시 첫 번째 스카이박스로 설정
+        if (skyboxes.Length > 0)
+        {
+            RenderSettings.skybox = skyboxes[currentIndex];
+            DynamicGI.UpdateEnvironment(); // 환경 조명 업데이트
+        }
+        Camera.main.clearFlags = CameraClearFlags.Skybox;
+    }
+
+    void Update()
+    {
+        // ... existing code ...
+    }
+
     [ContextMenu("Set Default Sky")]
     public void SetDefaultSky()
     {
