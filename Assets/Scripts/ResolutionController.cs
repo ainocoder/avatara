@@ -3,8 +3,8 @@ using UnityEngine;
 public class ResolutionController : MonoBehaviour
 {
     [Header("강제 해상도 설정")]
-    public int targetWidth = 1152;  // 768 * 1.5 = 1152 (좌우 폭 1.5배 확장)
-    public int targetHeight = 1344;
+    public int targetWidth = 2560;   // 고해상도 설정
+    public int targetHeight = 1440;
     public bool fullScreen = false;
     
     [Header("디버그 정보")]

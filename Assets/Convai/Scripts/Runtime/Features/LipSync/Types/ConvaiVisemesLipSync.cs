@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Convai.Scripts.Runtime.Core;
 using Convai.Scripts.Runtime.Extensions;
@@ -118,6 +119,9 @@ namespace Convai.Scripts.Runtime.Features.LipSync.Types
         {
             Dictionary<int, int> mapping = new Dictionary<int, int>();
 
+            // 게임오브젝트 이름 확인을 위한 루트 오브젝트 찾기
+            string rootObjectName = GetRootObjectName(skinnedMesh.transform);
+
             // Coyote 메시인 경우 특별한 매핑 사용
             if (skinnedMesh.name.Contains("Coyote") || skinnedMesh.sharedMesh.name.Contains("Coyote"))
             {
@@ -146,8 +150,44 @@ namespace Convai.Scripts.Runtime.Features.LipSync.Types
                 mapping[125] = 40;  // Tongue_Bulge_L -> Tongue_Tip_Up
                 mapping[126] = 40;  // Tongue_Bulge_R -> Tongue_Tip_Up
             }
+            
+            // missy1 게임오브젝트인 경우 특별한 매핑 사용
+            else if (rootObjectName.Equals("missy1", StringComparison.OrdinalIgnoreCase))
+            {
+                // missy1 전용 매핑 테이블
+                // 여기에 missy1에 필요한 매핑을 추가하세요
+                // 예시:
+                // mapping[원본인덱스] = 실제인덱스;
+                
+                Debug.Log($"missy1 특별 매핑 적용됨: {skinnedMesh.name}");
+            }
 
             return mapping;
+        }
+
+        // 루트 오브젝트 이름을 찾는 헬퍼 메서드
+        private string GetRootObjectName(Transform transform)
+        {
+            Transform current = transform;
+            
+            // ConvaiNPC 컴포넌트를 가진 오브젝트를 찾아서 올라감
+            while (current != null)
+            {
+                if (current.GetComponent<ConvaiNPC>() != null)
+                {
+                    return current.name;
+                }
+                current = current.parent;
+            }
+            
+            // ConvaiNPC를 찾지 못한 경우, 루트 오브젝트의 이름 반환
+            current = transform;
+            while (current.parent != null)
+            {
+                current = current.parent;
+            }
+            
+            return current.name;
         }
 
         private void UpdateMeshRenderer(SkinMeshRendererData data)
