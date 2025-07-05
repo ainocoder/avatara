@@ -151,15 +151,143 @@ namespace Convai.Scripts.Runtime.Features.LipSync.Types
                 mapping[126] = 40;  // Tongue_Bulge_R -> Tongue_Tip_Up
             }
             
-            // missy1 게임오브젝트인 경우 특별한 매핑 사용
-            else if (rootObjectName.Equals("missy1", StringComparison.OrdinalIgnoreCase))
+            // missy1 또는 left 게임오브젝트인 경우 특별한 매핑 사용
+            else if (rootObjectName.Equals("missy1", StringComparison.OrdinalIgnoreCase) || 
+                     rootObjectName.Equals("left", StringComparison.OrdinalIgnoreCase))
             {
-                // missy1 전용 매핑 테이블
-                // 여기에 missy1에 필요한 매핑을 추가하세요
-                // 예시:
-                // mapping[원본인덱스] = 실제인덱스;
+                // ===== ? 핵심 문제 해결 매핑 =====
+                // ? Jaw_Open 다시 활성화 (윗이빨 보이도록)
+                mapping[127] = 127;  // Jaw_Open -> Jaw_Open (턱 벌리기로 윗이빨 노출)
                 
-                Debug.Log($"missy1 특별 매핑 적용됨: {skinnedMesh.name}");
+                // ===== ? 확대된 입 벌리기 매핑 (오물오물 방지) =====
+                mapping[0] = 0;      // V_Open -> V_Open (기본 입 벌리기)
+                mapping[7] = 7;      // V_Lip_Open -> V_Lip_Open (기본 입술 벌리기)
+                mapping[8] = 0;      // AA_Wide_Open -> V_Open (크게 벌리기)
+                
+                // ===== ? 입 움직임 확대 강화 매핑 =====
+                mapping[38] = 117;   // 입 벌리기 강화: 아래입술 더 내리기
+                mapping[39] = 116;   // 입 벌리기 강화: 윗입술 더 올리기
+                mapping[40] = 0;     // 추가 입 벌리기: V_Open 중복 강화
+                mapping[41] = 7;     // 추가 입술 벌리기: V_Lip_Open 중복 강화
+                mapping[42] = 127;   // 턱 벌리기 강화: Jaw_Open 중복 매핑
+                
+                // ===== ? 입 형태 조절 매핑 =====
+                mapping[114] = 114;  // Mouth_Shrug_Upper -> Mouth_Shrug_Upper
+                mapping[115] = 115;  // Mouth_Shrug_Lower -> Mouth_Shrug_Lower
+                mapping[116] = 116;  // Mouth_Drop_Upper -> Mouth_Drop_Upper
+                mapping[117] = 117;  // Mouth_Drop_Lower -> Mouth_Drop_Lower
+                
+                // ===== ?? 한국어 발음 특화 + 움직임 확대 비즈음 매핑 =====
+                mapping[1] = 76;     // V_Explosive -> Mouth_Press_L (ㅂ, ㅍ, ㅁ - 입술음 강화)
+                mapping[2] = 102;    // V_Dental_Lip -> Mouth_Pull_Upper_L (ㄷ, ㅌ, ㄴ, ㄹ - 치조음 강화)  
+                mapping[3] = 82;     // V_Tight_O -> Mouth_Pucker_Up_L (ㅗ, ㅜ - 원순모음 강화)
+                mapping[4] = 78;     // V_Tight -> Mouth_Tighten_L (ㅡ - 평순모음 강화)
+                mapping[5] = 72;     // V_Wide -> Mouth_Stretch_L (ㅣ - 전설고모음 확대)
+                mapping[6] = 86;     // V_Affricate -> Mouth_Funnel_Up_L (ㅈ, ㅊ - 파찰음 확대)
+                
+                // ===== ? 발음 확대 보조 매핑 =====
+                mapping[43] = 77;    // ㅂㅍㅁ 양쪽 대칭 강화 (Mouth_Press_R)
+                mapping[44] = 103;   // ㄷㅌㄴㄹ 양쪽 대칭 강화 (Mouth_Pull_Upper_R)
+                mapping[45] = 73;    // ㅣ 발음 양쪽 확대 (Mouth_Stretch_R)
+                mapping[46] = 79;    // ㅡ 발음 양쪽 확대 (Mouth_Tighten_R)
+                
+                // ===== ?? 한국어 추가 발음 강화 매핑 =====
+                mapping[9] = 117;    // 추가: ㅏ 발음 강화 (아래입술 더 내리기)
+                mapping[10] = 82;    // 추가: ㅗ 발음 강화 (왼쪽 위 오므리기)
+                mapping[11] = 72;    // 추가: ㅣ 발음 강화 (입 늘리기)
+                mapping[12] = 78;    // 추가: ㅡ 발음 강화 (입 평평하게)
+                mapping[13] = 76;    // 추가: ㅂㅍㅁ 강화 (입술 닫기)
+                mapping[14] = 86;    // 추가: ㅈㅊ 강화 (파찰음)
+                
+                // ===== ? 'ㅗ/ㅜ' 원순모음 집중 강화 매핑 =====
+                mapping[25] = 83;    // ㅗ 발음: 오른쪽 위 오므리기 추가
+                mapping[26] = 84;    // ㅜ 발음: 왼쪽 아래 오므리기 강화  
+                mapping[27] = 85;    // ㅜ 발음: 오른쪽 아래 오므리기 강화
+                mapping[28] = 86;    // ㅗ 발음: 왼쪽 위 깔때기 모양
+                mapping[29] = 87;    // ㅗ 발음: 오른쪽 위 깔때기 모양
+                mapping[30] = 88;    // ㅜ 발음: 왼쪽 아래 깔때기 모양
+                mapping[31] = 89;    // ㅜ 발음: 오른쪽 아래 깔때기 모양
+                
+                // ===== ? 한국어 특수 발음 매핑 =====
+                mapping[15] = 78;    // ㅅ, ㅆ 치찰음 (입 조이기)
+                mapping[16] = 0;     // ㄱ, ㅋ 연구개음 (입 벌리기)
+                mapping[17] = 116;   // ㅓ 발음 (윗입술 올리기)
+                mapping[18] = 84;    // ㅜ 발음 강화 (아래쪽 오므리기)
+                mapping[19] = 88;    // 이중모음 ㅘ, ㅙ (아래쪽 깔때기)
+                mapping[20] = 89;    // 이중모음 ㅝ, ㅞ (오른쪽 아래 깔때기)
+                
+                // ===== ? 복합모음 & 이중모음 오므리기 강화 =====
+                mapping[32] = 82;    // ㅛ 발음 강화 (위쪽 오므리기 - ㅗ+ㅣ)
+                mapping[33] = 83;    // ㅛ 발음 대칭 (오른쪽 위 오므리기)
+                mapping[34] = 84;    // ㅠ 발음 강화 (아래쪽 오므리기 - ㅜ+ㅣ)
+                mapping[35] = 85;    // ㅠ 발음 대칭 (오른쪽 아래 오므리기)
+                mapping[36] = 86;    // ㅘ 발음 (ㅗ+ㅏ 깔때기)
+                mapping[37] = 88;    // ㅝ 발음 (ㅜ+ㅓ 깔때기)
+                
+                // ===== ? 전체적인 입 움직임 확대 매핑 =====
+                mapping[47] = 0;     // 전반적 입 벌리기 추가 강화
+                mapping[48] = 117;   // 아래 입술 추가 확대
+                mapping[49] = 116;   // 위 입술 추가 확대
+                mapping[50] = 127;   // 턱 벌리기 추가 확대
+                mapping[51] = 72;    // 입 가로 확대 (좌측)
+                mapping[52] = 73;    // 입 가로 확대 (우측)
+                mapping[53] = 66;    // 입꼬리 확대 (좌측)
+                mapping[54] = 67;    // 입꼬리 확대 (우측)
+                
+                // ===== ? 한국어 받침 발음 확대 매핑 =====
+                mapping[21] = 123;   // 받침 ㅁ, ㄴ, ㅇ (입 닫기)
+                mapping[22] = 78;    // 받침 ㅅ, ㅆ, ㅈ, ㅊ, ㅌ (입 조이기)
+                mapping[23] = 76;    // 받침 ㅂ, ㅍ (입술 닫기)
+                mapping[24] = 0;     // 받침 ㄱ, ㅋ (목구멍 닫기)
+                
+                // ===== ? 받침 발음 추가 강화 =====
+                mapping[55] = 77;    // 받침 ㅂㅍ 양쪽 강화 (Mouth_Press_R)
+                mapping[56] = 79;    // 받침 ㅅㅆ 양쪽 강화 (Mouth_Tighten_R)
+                mapping[57] = 117;   // 받침 후 모음 연결 강화 (아래입술)
+                mapping[58] = 116;   // 받침 후 모음 연결 강화 (윗입술)
+                
+                // ===== ? 입술 표현 매핑 (양쪽 대칭) =====
+                mapping[66] = 66;    // Mouth_Smile_L -> Mouth_Smile_L (ㅣ 발음용)
+                mapping[67] = 67;    // Mouth_Smile_R -> Mouth_Smile_R (ㅣ 발음용)
+                mapping[70] = 70;    // Mouth_Frown_L -> Mouth_Frown_L  
+                mapping[71] = 71;    // Mouth_Frown_R -> Mouth_Frown_R
+                mapping[76] = 76;    // Mouth_Press_L -> Mouth_Press_L (ㅂㅍㅁ용)
+                mapping[77] = 77;    // Mouth_Press_R -> Mouth_Press_R (ㅂㅍㅁ용)
+                
+                // ===== ?? 한국어 모음 체계 강화 매핑 =====
+                mapping[72] = 72;    // Mouth_Stretch_L -> ㅣ, ㅔ, ㅐ (전설모음)
+                mapping[73] = 73;    // Mouth_Stretch_R -> ㅣ, ㅔ, ㅐ (전설모음)
+                mapping[78] = 78;    // Mouth_Tighten_L -> ㅡ, ㅓ (중설모음)
+                mapping[79] = 79;    // Mouth_Tighten_R -> ㅡ, ㅓ (중설모음)
+                mapping[102] = 102;  // Mouth_Pull_Upper_L -> ㄷㅌㄴㄹ (치조음)
+                mapping[103] = 103;  // Mouth_Pull_Upper_R -> ㄷㅌㄴㄹ (치조음)
+                
+                // ===== 입술 말리기/펴기 매핑 =====
+                mapping[90] = 90;    // Mouth_Roll_In_Upper_L -> Mouth_Roll_In_Upper_L
+                mapping[91] = 91;    // Mouth_Roll_In_Upper_R -> Mouth_Roll_In_Upper_R
+                mapping[92] = 92;    // Mouth_Roll_In_Lower_L -> Mouth_Roll_In_Lower_L
+                mapping[93] = 93;    // Mouth_Roll_In_Lower_R -> Mouth_Roll_In_Lower_R
+                mapping[94] = 94;    // Mouth_Roll_Out_Upper_L -> Mouth_Roll_Out_Upper_L
+                mapping[95] = 95;    // Mouth_Roll_Out_Upper_R -> Mouth_Roll_Out_Upper_R
+                mapping[96] = 96;    // Mouth_Roll_Out_Lower_L -> Mouth_Roll_Out_Lower_L
+                mapping[97] = 97;    // Mouth_Roll_Out_Lower_R -> Mouth_Roll_Out_Lower_R
+                
+                // ===== ? 원순모음 완벽 오므리기 매핑 (ㅗㅜㅛㅠ 발음용) =====
+                mapping[82] = 82;    // Mouth_Pucker_Up_L -> ㅗㅛ 왼쪽 위 오므리기
+                mapping[83] = 83;    // Mouth_Pucker_Up_R -> ㅗㅛ 오른쪽 위 오므리기
+                mapping[84] = 84;    // Mouth_Pucker_Down_L -> ㅜㅠ 왼쪽 아래 오므리기
+                mapping[85] = 85;    // Mouth_Pucker_Down_R -> ㅜㅠ 오른쪽 아래 오므리기
+                mapping[86] = 86;    // Mouth_Funnel_Up_L -> ㅗㅛ 왼쪽 위 깔때기
+                mapping[87] = 87;    // Mouth_Funnel_Up_R -> ㅗㅛ 오른쪽 위 깔때기
+                mapping[88] = 88;    // Mouth_Funnel_Down_L -> ㅜㅠ 왼쪽 아래 깔때기
+                mapping[89] = 89;    // Mouth_Funnel_Down_R -> ㅜㅠ 오른쪽 아래 깔때기
+                
+                Debug.Log($"?? missy1 한국어 발음 특화 + 입 움직임 확대 립싱크 매핑 적용됨 (총 {mapping.Count}개): {skinnedMesh.name}");
+                Debug.Log("? 윗이빨 노출 + 한국어 발음 체계 + 원순모음 강화 + 입 움직임 확대");
+                Debug.Log("? 오물오물 방지: 입 벌리기/턱 벌리기/입술 확대 다중 강화");
+                Debug.Log("? 원순모음 강화: ㅗㅜㅛㅠ + 이중모음: ㅘㅝㅙㅞ (완벽한 오므리기)");
+                Debug.Log("?? 모음: ㅏㅓㅗㅜㅡㅣ + 자음: ㅂㅍㅁ/ㄷㅌㄴㄹ/ㅅㅆ/ㅈㅊ/ㄱㅋㅇ + 받침발음");
+                Debug.Log("? 입 움직임 3배 확대: V_Open/Jaw_Open/Mouth_Drop 다중 매핑 + 양쪽 대칭 강화!");
             }
 
             return mapping;
